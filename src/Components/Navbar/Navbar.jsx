@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="fixed w-full top-0 left-0 bg-white/80 backdrop-blur-lg border-b border-white/20 shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
         <a
-          href="#"
+          href="/"
           className="flex items-center gap-2 hover:scale-105 transition-transform"
         >
           <img
@@ -29,7 +29,7 @@ const Navbar = () => {
           {["Home", "About Us", "Products", "Contact"].map((item, idx) => (
             <li key={idx}>
               <a
-                href={`#${item.toLowerCase().replace(" ", "")}`}
+                href={`/${item.toLowerCase().replace(" ", "")}`}
                 className="relative text-gray-700 hover:text-[#CE0043] transition-colors
                   after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#CE0043] 
                   after:transition-all after:duration-300 hover:after:w-full"
@@ -40,7 +40,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="#contact"
+              href="/contact"
               className="ml-3 px-4 lg:px-5 py-2 bg-gradient-to-r from-[#CE0043] to-[#ff5a7d] text-white rounded-full shadow-md shadow-[#ce004340] hover:scale-105 transition"
             >
               Get in Touch
@@ -58,7 +58,7 @@ const Navbar = () => {
           {["Home", "About Us", "Products", "Contact"].map((item, idx) => (
             <li key={idx}>
               <a
-                href={`#${item.toLowerCase().replace(" ", "")}`}
+                href={`/${item.toLowerCase().replace(" ", "")}`}
                 onClick={() => setIsOpen(false)}
                 className="block text-gray-700 hover:text-[#CE0043] transition-colors"
               >
@@ -68,7 +68,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => setIsOpen(false)}
               className="block px-5 py-2 text-center bg-gradient-to-r from-[#CE0043] to-[#ff5a7d] text-white rounded-full shadow-md shadow-[#ce004340] hover:scale-105 transition"
             >
