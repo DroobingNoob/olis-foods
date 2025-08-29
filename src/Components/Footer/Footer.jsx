@@ -38,15 +38,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#testimonials"
-                className="hover:text-[#CE0043] transition"
-              >
-                Testimonials
+              <a href="/faq" className="hover:text-[#CE0043] transition">
+                Frequently Asked Question (FAQ)
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-[#CE0043] transition">
+              <a href="/contact" className="hover:text-[#CE0043] transition">
                 Contact
               </a>
             </li>

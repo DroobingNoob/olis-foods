@@ -10,7 +10,7 @@ import {
 
 const ContactPage = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 via-white to-pink-50 py-20 px-6">
+    <section className="relative bg-gradient-to-br from-gray-50 via-white to-pink-50 pt-25 pb-10 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         <div>
           <h2 className="text-4xl font-bold mb-6 tracking-tight text-gray-900">
