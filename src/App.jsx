@@ -6,6 +6,11 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import FAQPage from "./Pages/FAQPage/FAQPage";
+import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage/PrivacyPolicyPage";
+import TermsAndConditionsPage from "./Pages/TermsAndConditionsPage/TermsAndConditionsPage";
+import CareerPage from "./Pages/CareerPage/CareerPage";
+import AboutUsPage from "./Pages/AboutUsPage/AboutUsPage";
+import ProductPage from "./Pages/Product Page/ProductPage";
 
 function App() {
   return (
@@ -17,6 +22,14 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route
+            path="/terms-conditions"
+            element={<TermsAndConditionsPage />}
+          />
+          <Route path="/career" element={<CareerPage />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/products/:slug" element={<ProductPage />} />
         </Routes>
       </Router>
       <Footer />
